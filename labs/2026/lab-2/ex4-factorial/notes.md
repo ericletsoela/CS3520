@@ -1,0 +1,2 @@
+# Exercise 4 - factorial procedure
+For N=5, both versions print `Factorial: 120`. Main passes N in `a0`, calls via `jal ra,factorial`, and receives the result in `a0`. Inside the leaf procedure, `s1` is the product and `s2` the next multiplier. The procedure saves and restores both callee-saved registers in a 16-byte frame; it does not need to save `ra` because it makes no calls. `jalr x0,ra,0` returns. `mul` requires an RV32IM processor in Ripes. N must be 0 through 12 for a signed 32-bit result; negative input is outside factorial's mathematical domain.
