@@ -1,0 +1,2 @@
+# Exercise 3 - count even array elements
+The C++ model prints `Even count: 4`: 12, -4, 0 and 28 are even. `t0` is the array base, `t1` its length, `t2` the index, `t3` the count, `t4` a temporary address, `t5` the element and `t6` its low bit. Shift the index left by 2 because each `.word` is four bytes. `andi` works for negative even values as well. Keep `n` equal to the number of `.word` entries.
