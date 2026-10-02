@@ -1,0 +1,2 @@
+# Exercise 5 - Euclid's GCD procedure
+With 48 and 18, both versions print `GCD: 6`. The invariant is that `gcd(a,b) = gcd(b,a%b)`. `a0` and `a1` hold the current pair; `t0` temporarily holds the remainder. The zero divisor check must precede `rem`. This leaf procedure changes only caller-saved registers and does not change `sp`; it returns through the original `ra`. `rem` needs RV32IM in Ripes. Inputs are nonnegative and not both zero; `gcd(0,b)=b` and `gcd(a,0)=a`.
