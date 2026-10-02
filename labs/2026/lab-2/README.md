@@ -23,5 +23,3 @@ The model's input is `{12,45,7,93,28,61,4}` and its output is `Maximum: 93`. At 
 ## Reproduce and submit
 
 Run a C++ model from its folder using `g++ -std=c++17 -Wall -Wextra model.cpp -o model && ./model`. In Ripes, open `solution.s`, assemble, run, then compare the exact printed integer with the table. For Step 5, compare both words in `encoding-analysis.md` with Ripes' machine-code view using uncompressed RV32IM instructions.
-
-Push your verified work to your public fork and submit the repository URL on Thuto.
