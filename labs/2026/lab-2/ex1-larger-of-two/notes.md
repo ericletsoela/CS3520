@@ -1,0 +1,2 @@
+# Exercise 1 - larger of two
+The values 17 and 29 are loaded from `.data`; the program prints `Larger: 29`. `t0` holds the current choice, `t1` the second number, and `t2` keeps the answer while printing the label. `bge t0,t1,selected` skips the replacement when the first value is already at least as large. Equality correctly returns either equal value. Change both the C++ initialisers and the `.word` values to try other inputs.
